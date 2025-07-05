@@ -359,8 +359,6 @@
     }
 
     .modal-content {
-        max-height: 34%;
-        height: 100% !important;
         width: 110% !important;
     }
 
@@ -412,17 +410,6 @@
     .modal-btn {
         width: 145% !important;
         padding: 0.4rem 1rem !important;
-    }
-
-    .modal-content {
-        max-height: 32%;
-        height: 100% !important;
-        width: 110% !important;
-    }
-
-    .flower {
-        width: 25% !important;
-        margin: 0.2rem auto !important;
     }
 
     .close-package {

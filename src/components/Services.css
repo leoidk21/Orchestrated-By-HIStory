@@ -149,8 +149,10 @@
 	align-items: center;
 	flex-direction: column;
     box-sizing: border-box;
+	justify-content: center;
 	background: var(--white-bg-color);
 	padding: var(--padding-large_1) var(--margin-large_2);
+	margin: 0 auto;    
 }
 
 .modal-content h1 {
@@ -161,7 +163,7 @@
 }
 
 .modal-btn {
-	width: 110%;
+	width: 100%; 
 	border: none;
 	cursor: pointer;
 	position: relative;
@@ -171,6 +173,7 @@
 	font-family: 'HvD', sans-serif;
 	background-color: var(--brand-color);
 	padding: var(--padding-extra-small) var(--padding-medium);
+	box-sizing: border-box; 
 }
 
 .modal-btn::before {
