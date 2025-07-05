@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/Orchestrated-By-HIStory/static/css/main.feee5da6.css",
-    "main.js": "/Orchestrated-By-HIStory/static/js/main.eff71ed7.js",
+    "main.css": "/Orchestrated-By-HIStory/static/css/main.62cfb991.css",
+    "main.js": "/Orchestrated-By-HIStory/static/js/main.43ebb1ae.js",
     "static/media/aboutusheader.png": "/Orchestrated-By-HIStory/static/media/aboutusheader.92ebd634ef3d07f30c49.png",
     "static/media/wedding-floral-concept-copy-space.jpg": "/Orchestrated-By-HIStory/static/media/wedding-floral-concept-copy-space.8cfba695f92ca9dcc148.jpg",
     "static/media/coordinators.png": "/Orchestrated-By-HIStory/static/media/coordinators.5ef9e738c9ef5ca0812b.png",
+    "static/media/Enhanced_Grand_Wedding_Package.png": "/Orchestrated-By-HIStory/static/media/Enhanced_Grand_Wedding_Package.5dfdc257f953ffdb3e0a.png",
     "static/media/parties-card.png": "/Orchestrated-By-HIStory/static/media/parties-card.cae0cd2714b4369108d2.png",
     "static/media/debut-card.png": "/Orchestrated-By-HIStory/static/media/debut-card.dc483688387f5ce1ef8b.png",
     "static/media/beautiful-couple-having-their-wedding-beach_23-2149043942 1 (1).png": "/Orchestrated-By-HIStory/static/media/beautiful-couple-having-their-wedding-beach_23-2149043942 1 (1).a9a5f6423d770218031b.png",
@@ -22,11 +23,11 @@
     "static/media/Fontspring-DEMO-theseasons-reg.otf": "/Orchestrated-By-HIStory/static/media/Fontspring-DEMO-theseasons-reg.2c9625941d4c89994b85.otf",
     "static/media/360851387_11432686 1.png": "/Orchestrated-By-HIStory/static/media/360851387_11432686 1.947382881624d9093405.png",
     "index.html": "/Orchestrated-By-HIStory/index.html",
-    "main.feee5da6.css.map": "/Orchestrated-By-HIStory/static/css/main.feee5da6.css.map",
-    "main.eff71ed7.js.map": "/Orchestrated-By-HIStory/static/js/main.eff71ed7.js.map"
+    "main.62cfb991.css.map": "/Orchestrated-By-HIStory/static/css/main.62cfb991.css.map",
+    "main.43ebb1ae.js.map": "/Orchestrated-By-HIStory/static/js/main.43ebb1ae.js.map"
   },
   "entrypoints": [
-    "static/css/main.feee5da6.css",
-    "static/js/main.eff71ed7.js"
+    "static/css/main.62cfb991.css",
+    "static/js/main.43ebb1ae.js"
   ]
 }
