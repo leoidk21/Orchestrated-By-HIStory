@@ -109,11 +109,12 @@
 }
 .header-text {
     letter-spacing: 0.1rem;
+    max-width: 500px;
     color: var(--main-text-color);
-    margin-top: var(--padding-medium);
-    font-size: clamp(1rem, 2vw, 1.2rem);
-    margin-bottom: var(--padding-medium);
+    margin-top: var(--padding-large);
+    margin-bottom: var(--padding-large);
     font-family: 'sarasvati', sans-serif;
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
     -webkit-text-stroke: 0.2px var(--main-text-color);
 }
 .semicolon {

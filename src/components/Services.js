@@ -6,23 +6,24 @@ import weddingCard from "../assets/wedding-card.png";
 import debutCard from "../assets/debut-card.png";
 import partiesCard from "../assets/parties-card.png";
 import flower from "../assets/360851387_11432686 1.png";
-import intimateWedding from "../assets/INTIMATE_WEDDINGS_MODAL_Enhanced.jpg";
+import intimateWedding from "../assets/INTIMATE_WEDDINGS_MODAL_Enhanced.jpg"
+import grandWedding from "../assets/Enhanced_Grand_Wedding_Package.png";
 
 function Services() {
     const [modal, setModal] = useState(false);
-    const [serviceModal, setServiceModal] = useState(false);
+    const [activeService, setActiveService] = useState(null);
 
     const toggleModal = () => {
         setModal(!modal);
     };
 
-    const openServiceModal = () => {
-        setModal(false); // Close the "Choose Wedding Type" modal
-        setServiceModal(true); // Open the Intimate Wedding modal
+    const openServiceModal = (type) => {
+        setModal(false);
+        setActiveService(type); 
     };
 
     const closeServiceModal = () => {
-        setServiceModal(false);
+        setActiveService(null);
     };
 
     return (
@@ -47,7 +48,7 @@ function Services() {
                     <div
                         className="wedding-card"
                         onClick={() => {
-                            if (!serviceModal) toggleModal();
+                            if (!activeService) toggleModal();
                         }}
                     >
                         {modal && (
@@ -60,18 +61,20 @@ function Services() {
                                         style={{
                                             width: "18%",
                                             marginBottom: "0.5rem",
-                                        
                                         }}
                                     />
                                     <h1>Choose Wedding Type</h1>
                                     <button
                                         className="modal-btn"
-                                        onClick={openServiceModal}
+                                        onClick={() => openServiceModal("intimate")}
                                     >
                                     <span>Intimate Wedding</span> 
                                     </button>
 
-                                    <button className="modal-btn">
+                                    <button 
+                                        className="modal-btn"
+                                        onClick={() => openServiceModal("grand")}
+                                    >
                                        <span>Grand Wedding</span>  
                                     </button>
                                     <button
@@ -84,13 +87,31 @@ function Services() {
                             </div>
                         )}
 
-                        {serviceModal && (
+                        {activeService === "intimate" && (
                             <div className="intimate-wedding-inclusions">
                                 <div className="image-wrapper">
                                     <img
                                         className="package-img"
                                         src={intimateWedding}
                                         alt="intimateWedding"
+                                    />
+                                    <button
+                                        className="close-package"
+                                        onClick={closeServiceModal}
+                                    >
+                                        &times;
+                                    </button>
+                                </div>
+                            </div>
+                        )}
+
+                        {activeService === "grand" && (
+                            <div className="grand-wedding-inclusions">
+                                <div className="image-wrapper">
+                                    <img
+                                        className="package-img"
+                                        src={grandWedding}
+                                        alt="grandWedding"
                                     />
                                     <button
                                         className="close-package"

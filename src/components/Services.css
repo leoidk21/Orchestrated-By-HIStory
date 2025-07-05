@@ -207,7 +207,8 @@
     font-size: var(--padding-extra-large);
 }
 
-.intimate-wedding-inclusions {
+.intimate-wedding-inclusions, 
+.grand-wedding-inclusions {	
 	top: 0;
 	left: 0;
 	right: 0;

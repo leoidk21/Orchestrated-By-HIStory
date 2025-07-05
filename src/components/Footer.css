@@ -8,8 +8,7 @@
     background-color: var(--brand-color);
 }
 .copyright {
-    letter-spacing: 0.1rem;
-    color: var(--white-bg-color);
-    font-family: 'HvD', sans-serif;
+    color: var(--text-color);
+    font-family: 'David Libre', sans-serif;
     font-size: clamp(1rem, 1.4vw, 1.4rem);
 }

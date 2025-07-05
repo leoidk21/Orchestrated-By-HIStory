@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
@@ -12,14 +12,24 @@ import "./components/Import.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
+    const servicesRef = useRef(null);
+
+    const scrollToServices = () => {
+        const offset = 100;
+        const top = servicesRef.current.getBoundingClientRect().top + window.scrollY - offset;
+        window.scrollTo({ top, behavior: "smooth"});
+    };
+
     const [isOpen, setIsOpen] = useState(false);
 
     return (
         <>
             <Router>
                 <Navbar />
-                <Hero />
-                <Services />
+                <Hero  scrollToServices={scrollToServices} />
+                <div ref={servicesRef} id="services">
+                    <Services />    
+                </div>
                 <Gallery openModal={() => setIsOpen(true)} />
                 <AboutUs />
                 <Contact />
@@ -70,7 +80,6 @@ function App() {
                         </div>
                     </div>
                 )}
-
                 <Routes>
                     <Route path="/" exact />
                 </Routes>

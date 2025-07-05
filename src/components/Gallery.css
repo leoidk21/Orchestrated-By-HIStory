@@ -4,6 +4,7 @@
     margin: 0 auto;
     color: var( --border-color-strong);
 }
+
 .gallery-section {
     display: flex;
     align-items: center;

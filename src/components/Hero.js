@@ -2,10 +2,12 @@ import React from "react";
 import "../components/Hero.css";
 import "../components/Import.css";
 import "../components/Responsive.css";
+import "../components/App.css";
+
 import quotationImage from "../assets/quotation.png";
 import quotationImage2 from "../assets/quotation-2.png";
     
-function Hero() {
+function Hero({ scrollToServices }) {
     return (
         <>
             <div className="hero-container" id="home">
@@ -16,7 +18,11 @@ function Hero() {
                         </h1>
                         <div className="text-overlay"></div>
                         <p className="hero-text">Event Planner</p>
-                        <button className="services-btn" ><span>View Services</span></button>
+
+                        <button 
+                            className="services-btn" onClick={scrollToServices}>
+                            <span>View Services</span>
+                        </button>
                     </div>
                 </div>
 
@@ -25,10 +31,10 @@ function Hero() {
                     <div className="header-content">
                         <img src={quotationImage} alt="quotation" />
                         <p className="header-text">
-                            He has made everything beautiful in its time.<br/>
+                            He has made everything beautiful in its time.
                             He has also set eternity in the human heart
                             <span className="semicolon">;</span> yet no one can
-                            <br /> fathom what God has done from beginning to
+                            fathom what God has done from beginning to
                             end.
                         </p>
                         <img src={quotationImage2} alt="quotation" />

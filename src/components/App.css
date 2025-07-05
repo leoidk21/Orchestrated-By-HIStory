@@ -1,9 +1,14 @@
 html {
   scroll-behavior: smooth;
 }
-@keyframes appear {
 
+#home,
+#services,
+#gallery,
+#about {
+  scroll-margin-top: 100px; 
 }
+
 .hero-txt {
   opacity: 0;
   pointer-events: none;
