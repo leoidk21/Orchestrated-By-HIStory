@@ -1,0 +1,166 @@
+html {
+  scroll-behavior: smooth;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  color: var(--dark-theme-white-text);
+  background-color: var(--dark-theme-very-dark-blue-bg);
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+@font-face {
+  font-family: 'sarasvati';
+  src: url(../assets/font/Sarasvati-9Y4w5.ttf);
+}
+@font-face {
+  font-family: 'newIconScript';
+  src: url(../assets//font/New\ Icon\ Script.ttf);
+}
+@font-face {
+  font-family: 'fontspring';
+  src: url(../assets/font/DEMO-atbscript-rg.otf);
+}
+@font-face {
+  font-family: 'HvD';
+  src: url(../assets/font/HvDTrial_Brandon_Grotesque_light-BF64a625c93e709.otf);
+}
+@font-face {
+  font-family: 'sarasvati';
+  src: url(../assets/font/Sarasvati-9Y4w5.ttf);
+}
+@font-face {
+    font-family: 'footlight';
+    src: url(../assets/font/FootlightMTProLight.otf);
+}
+
+@font-face {
+  font-family: 'theseason';
+  src: url(../assets/font//Fontspring-DEMO-theseasons-reg.otf);
+}
+
+:root {
+  /* Background Colors */
+  --background-color: #FEFAF8;
+  --background-color-section: #D1B89A;
+  --header-background-color: #FFF4F0;
+  --white-bg-color: #FFF;
+
+  /* Text Colors */
+  --main-text-color: #000;
+  --text-color: #333446;
+  --text-color_1: #343131;
+
+  /* Accent Colors */
+  --brand-color: #C49B73; 
+  --brand-hover: #B47D4C;
+  --border-color-light: #DABFAE;
+  --border-color-medium: #D1B89A;
+  --border-color-strong: #B47D4C;
+
+  /* Padding */
+  --padding-extra-small: 0.5rem;
+  --padding-small: 0.6rem;
+  --padding-small_1: 0.8rem;
+  --padding-small-medium: 0.99rem;
+  --padding-medium: 1rem;
+  --padding-large: 1.2rem;
+  --padding-large_2: 1.5rem;
+  --padding-large_1: 2rem;
+  --padding-larger: 2.2rem;
+  --padding-largest: 2.5rem;
+  --padding-extra-large: 2.8rem;
+  --padding-extra-large_1: 3rem;
+  --padding-extra-largest: 7rem;
+
+  /* Margin */
+  --margin-negative-small: -0.2rem;
+  --margin-negative-medium: -1rem;
+  --margin-small: 0.5rem;
+  --margin-medium: 1rem;
+  --margin-medium_1: 1.2rem;
+  --margin-medium_2: 1.5rem;
+  --margin-large: 2rem;
+  --margin-large_1: 3rem;
+  --margin-large_2: 4rem;
+  --margin-xlarge: 5rem;
+  --margin-xxlarge: 6rem;
+  --margin-xlargest: 7.125rem;
+
+  /* Font Sizes */
+  --font-xs: 0.9rem;
+  --font-sm: 1rem;
+  --font-md: 1.2rem;
+  --font-md_1: 1.3rem;
+  --font-lg: 1.4rem;
+  --font-lgst: 1.5rem;
+  --font-lgr: 1.6rem;
+  --font-xl: 2rem;
+  --font-xxl: 2.5rem;
+  --font-xxxl: 3.5rem;
+
+  /* Font Weights */
+  --font-weight-light: 100; 
+  --font-weight-normal: 400;
+  --font-weight-bold: 600;
+
+  /* Border Radius */
+  --radius-sm: 0.5rem;
+  --radius-md: 1rem;
+  --radius-lmd: 1.3rem;
+  --radius-lg: 2rem;
+  --radius-round: 50%;
+
+  /* Gap */
+  --gap-xs: 1rem;
+  --gap-sm_1: 1.5rem;
+  --gap-sm: 2rem;
+  --gap-sm-md: 3rem;
+  --gap-md: 5rem;
+  --gap-xlg: 12rem; 
+
+  /* Box Shadows */
+  --shadow-light: 0 2px 5px rgba(0, 0, 0, 0.1);
+  --shadow-medium: 2px 2px 4px rgba(0, 0, 0, 0.25); 
+  --shadow-strong: 0 5px 15px rgba(0, 0, 0, 0.3);
+
+  /* Transitions */
+  --transition-fast: 0.3s ease;
+  --transition-medium: width 0.4s ease;
+  --transition-slow: 0.5s ease;
+
+  /* Fonts */
+  --font-calligraphy: "Alex Brush", cursive;
+  --font-allura: "Allura", cursive;
+  --font-square-peg: "Square Peg", cursive;
+  --font-david: 'David Libre', sans-serif;
+  --font-vibes: "Great Vibes", sans-serif;
+  --font-playfair: 'Playfair Display', cursive;
+}

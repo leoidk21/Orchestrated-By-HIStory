@@ -1,0 +1,407 @@
+@media (max-width: 1536px) {
+    .navbar {
+        max-width: 1280px;
+    }
+	.nav-menu.active {
+		height: 100vh;
+	}
+}
+
+@media (max-width: 1280px) {
+    .navbar {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 1024px;
+    }
+
+    .coordinators-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+@media (max-width: 1024px) {
+    .navbar {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 960px;
+    }
+
+    .wedding-link,
+    .debut-link,
+    .parties-link {
+        width: 250px !important;
+    }
+
+    .coordinators-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .contact-content {
+        display: flex;
+        gap: 5rem !important;
+        flex-direction: column;
+        margin: 2rem auto !important;
+    }
+
+    .grid {
+        flex-direction: column;
+    }
+
+    .gallery-details {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .details-divider {
+        width: 80% !important;
+    }
+
+    .contact-divider {
+        width: 85% !important;
+    }
+
+    form,
+    .contact-links {
+        margin: 0 auto !important;
+        width: 85% !important;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .menu-container {
+        display: block;
+    }
+
+    .nav-item {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        width: 100%;
+        max-width: 640px;
+        margin: 0 auto;
+    }
+
+    .hero-section {
+        height: auto;
+        padding: 4rem 1rem;
+    }
+
+    .services-btn {
+        padding: 0.8rem 2.5rem !important;
+        font-size: 1.2rem !important;
+    }
+
+    .services-card {
+        grid-template-columns: 1fr !important;
+    }
+
+    .contact-content {
+        display: grid;
+        gap: 5rem !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .obh-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .obh-divider {
+        display: none;
+    }
+
+    .grid {
+        flex-direction: column;
+    }
+
+    .details-divider {
+        width: 60% !important;
+    }
+
+    .detailsOverlay {
+        max-width: 520px !important;
+    }
+
+    .gallery-underline {
+        width: 82% !important;
+    }
+
+    .gallery-subheadline {
+        margin: 0 auto;
+    }
+
+    .coordinators-grid {
+        margin: 0 auto;
+        grid-template-columns: 1fr 1fr !important;
+    }
+
+    .coordinators-img,
+    .overlay-container {
+        max-width: 260px !important;
+    }
+
+    input,
+    textarea {
+        max-width: 425px;
+    }
+}
+
+@media (max-width: 640px) {
+    .coordinators-grid {
+        margin: 0 auto;
+        grid-template-columns: 1fr !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        max-width: 400px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .brand-name {
+        font-size: 1.2rem;
+    }
+
+    .services-btn {
+        padding: 0.4rem 2rem !important;
+    }
+
+    .quote-section {
+        margin: 1rem auto !important;
+        height: 400px !important;
+    }
+
+    .quote-image {
+        margin: -2rem auto;
+    }
+
+    .services-container {
+        margin: 4rem auto !important;
+    }
+
+    .header-text {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+    .weddingImage,
+    .debutImage,
+    .partiesImage {
+        width: 320px !important;
+    }
+
+    .gallery-subheadline {
+        margin: 1rem auto !important;
+    }
+
+    .gallery-section-underline {
+        display: none;
+    }
+
+    .gallery-underline {
+        width: 88%;
+        margin: -2rem auto !important;
+    }
+
+    .grid {
+        margin: 0 auto !important;
+    }
+
+    .eventFlower {
+        left: -50px !important;
+        max-width: 180px !important;
+    }
+
+    .event-date {
+        font-size: 1.8rem !important;
+    }
+
+    .gallery-details h2 {
+        line-height: 4.2rem !important;
+    }
+
+    .gallery-message {
+        line-height: 2.5rem !important;
+        margin-top: 1.5rem !important;
+    }
+
+    .prayer-message {
+        margin-bottom: 1rem !important;
+    }
+
+    .details-divider {
+        margin: 0 auto;
+        width: 70% !important;
+    }
+
+    input,
+    textarea {
+        width: 100% !important;
+        box-sizing: border-box;
+    }
+
+    .footer-divider {
+        display: none;
+    }
+
+    .footer-section {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .obhLogo {
+        width: 140px !important;
+    }
+
+    .coordinators {
+        margin: 2.2rem auto !important;
+    }
+
+    .obh-container {
+        margin: 5rem auto !important;
+    }
+
+    .obh-intro {
+        margin: -2rem auto !important;
+        text-align: center !important;
+    }
+
+    .contact-content {
+        margin: 2rem auto !important;
+    }
+
+    .contact-section {
+        margin-top: 2.5rem !important;
+    }
+
+    .contact-divider {
+        width: 85% !important;
+    }
+
+    form {
+        margin: 0 auto !important;
+        width: 85% !important;
+    }
+
+    .contact-links {
+        width: 85% !important;
+        margin: -2rem auto !important;
+    }
+
+    .coordinators-img,
+    .overlay-container {
+        max-width: 100% !important;
+    }
+
+    .aboutusheader {
+        padding-right: 3.5rem;
+        margin: 0 auto !important;
+    }
+
+    .about-header,
+    .about-header::before {
+        height: 300px !important;
+    }
+    
+    .text-overlay {
+        width: 30% !important;
+    }
+    
+    .modal-btn {
+        padding: 0.4rem 1rem !important;  
+    }
+}
+
+@media (max-width: 395px) {
+    .navbar {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 350px;
+    }
+
+    input,
+    textarea {
+        max-width: 290px;
+    }
+
+    .eventFlower {
+        left: -50px !important;
+        max-width: 160px !important;
+    }
+
+    .gallery-subheadline {
+        text-align: center;
+    }
+
+    .aboutusheader {
+        text-align: center !important;
+        margin: 0 auto !important;
+    }
+
+    .modal-btn {
+        width: 130% !important;
+        font-size: 1.2rem !important;
+        padding: 0.4rem 1rem !important;
+    }
+
+    .flower {
+        width: 22% !important;
+    }
+
+    .modal-content h1 {
+        white-space: nowrap !important;
+    }
+}
+
+@media (max-width: 320px) {
+    .navbar {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 300px;
+    }
+
+    .coordinators-grid {
+        margin: 2rem auto !important;
+    }
+
+    .coordinators-img,
+    .overlay-container {
+        width: 280px !important;
+    }
+
+    .eventFlower {
+        left: -50px !important;
+        max-width: 140px !important;
+    }
+
+    .event-date {
+        font-size: 1.6rem !important;
+        margin: 1rem auto !important;
+    }
+
+    .modal-btn {
+        width: 145% !important;
+        padding: 0.4rem 1rem !important;
+    }
+
+    .modal-content {
+        height: 32% !important;
+        width: 110% !important;
+    }
+
+    .flower {
+        width: 25% !important;
+        margin: 0.2rem auto !important;
+    }
+
+}

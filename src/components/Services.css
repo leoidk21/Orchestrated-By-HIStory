@@ -1,0 +1,251 @@
+.services-container {
+	display: flex;
+	text-align: center;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: var(--margin-large_1);
+	margin-bottom: var(--margin-large);
+}
+
+.services-txt {
+	font-weight: normal;
+	letter-spacing: 0.2rem;
+	text-transform: uppercase;
+	color: var(--main-text-color);
+	font-family: 'sarasvati', sans-serif;
+	font-size: clamp(2.2rem, 5vw, 3.5rem);
+}
+
+.services-underline {
+	width: 10%;
+	margin: 0 auto;
+	border-bottom: 2px dashed var(--text-color_1);
+}
+
+.services-intro {
+	width: 55%;
+	margin: 0 auto;
+	letter-spacing: 0.1rem;
+	margin-top: var(--margin-large);
+	font-size: clamp(1rem, 2vw, 1.4rem);
+	font-family: 'sarasvati', sans-serif;
+	-webkit-text-stroke: 0.2px var(--main-text-color);
+}
+
+.sq-mark {
+	font-weight: 100;
+	font-family: 'footlight', sans-serif;
+}
+
+.inquire-txt {
+	font-weight: normal;
+	letter-spacing: 0.1rem;
+	margin-top: var(--margin-medium_2);
+	font-family: 'sarasvati', sans-serif;
+	font-size: clamp(1.2rem, 2vw, 1.4rem);
+	-webkit-text-stroke: 0.2px var(--main-text-color);
+}
+
+.services-card {
+	gap: 55px;
+	display: grid;
+	margin-top: var(--margin-large);
+	padding: var(--padding-large_2);
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.wedding-card,
+.debut-card,
+.parties-card {
+	position: relative;
+	cursor: pointer;
+}
+
+.wedding-card img,
+.debut-card img,
+.parties-card img {
+	width: 100%;
+}
+
+.wedding-link,
+.debut-link,
+.parties-link {
+	top: 50%;
+	left: 50%;
+	width: 280px;
+	display: flex;
+	text-align: center;																		
+	position: absolute;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	transform: translate(-50%, -50%);
+	background-color: rgba(241, 246, 249, 0.7);
+	padding: var(--padding-large_2) var(--padding-large_1);
+}
+
+.wedding-link h1,
+.debut-link h1,
+.parties-link h1 {
+	margin: 0;
+	font-weight: normal;
+	letter-spacing: 0.2rem;
+	font-size: var(--font-xl);
+	text-transform: uppercase;
+	font-family: 'sarasvati', sans-serif;
+	-webkit-text-stroke: 0.2px var(--main-text-color);
+}
+
+.wedding-link p,
+.parties-link p {
+	margin: 0;
+	letter-spacing: 0.2rem;
+	font-family: 'HvD', sans-serif;
+}
+
+.debut-link p {
+	white-space: nowrap;
+	letter-spacing: 0.2rem;
+	font-family: 'HvD', sans-serif;
+}
+
+.rotated-arrow {
+	display: flex;
+	border-radius: 50%;
+	position: absolute;
+	align-items: center;
+	top: var(--margin-medium);
+	right: var(--margin-medium);
+	padding: var(--padding-small_1);
+	background-color: var(--white-bg-color);
+}
+
+.rotated-icon {
+	transform: rotate(-45deg);
+}
+
+.modal {
+    top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 9999;
+	display: flex;
+	position: fixed;
+	align-items: center;
+	justify-content: center;
+	padding: var(--padding-large_1);
+	background: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+	width: 100%;
+	z-index: 1001;
+	display: flex;
+    max-width: 450px;
+    text-align: center;
+	position: relative;
+	align-items: center;
+	flex-direction: column;
+    box-sizing: border-box;
+	background: var(--white-bg-color);
+	padding: var(--padding-large_1) var(--margin-large_2);
+}
+
+.modal-content h1 {
+	font-weight: normal;
+	font-family: 'sarasvati';
+	font-size: clamp(1.33rem, 2vw, 2rem);
+	-webkit-text-stroke: 0.2px var(--main-text-color);
+}
+
+.modal-btn {
+	width: 110%;
+	border: none;
+	cursor: pointer;
+	position: relative;
+	font-size: var(--font-lg);
+	color: var(--white-bg-color);
+	margin: var(--margin-small) 0;
+	font-family: 'HvD', sans-serif;
+	background-color: var(--brand-color);
+	padding: var(--padding-extra-small) var(--padding-medium);
+}
+
+.modal-btn::before {
+    top: 0;
+    left: 0;
+    width: 0%;
+    z-index: 0;
+    content: "";
+    height: 100%;
+    position: absolute;
+    transition: width 0.4s ease;
+    background-color: var(--brand-hover);
+}
+
+.modal-btn span {
+    z-index: 1;
+	position: relative;
+}
+
+.modal-btn:hover::before {
+  width: 100%;
+}
+
+.close-btn {
+	top: 0;
+	right: 12px;
+	border: none;
+	cursor: pointer;
+	font-weight: 500;
+    box-shadow: none;
+	background: none;
+	position: absolute;
+	color: var(--main-text-color);
+    font-size: var(--padding-extra-large);
+}
+
+.intimate-wedding-inclusions {
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 9999;
+	display: flex;
+	position: fixed;
+	align-items: center;
+	pointer-events: none;
+	justify-content: center;
+	background: rgba(0, 0, 0, 0.6);
+}
+
+.image-wrapper {
+    width: 90%;
+    z-index: 1001;
+    display: flex;
+    max-width: 500px;
+    position: relative;
+    align-items: center;
+    pointer-events: auto;
+    justify-content: center;
+}
+.package-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+.close-package {
+    top: 0;
+    z-index: 10;
+    border: none;
+    cursor: pointer;
+    background: none;
+    font-weight: bold;
+    position: absolute;
+    color: var(--text-color);
+    font-size: var(--font-xxl);
+    left: var(--padding-small_1);
+}

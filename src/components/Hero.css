@@ -1,0 +1,194 @@
+.hero-section {
+    width: 100%;
+    display: flex;
+    height: 650px;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    background: url('../assets/resized_banner_1920x720.jpg') center center/cover no-repeat;
+}
+.hero-section::before {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    content: "";
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.50);
+}
+.hero-content {
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    width: 85%;
+    text-align: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    padding-left: var(--padding-small_1);
+    padding-right: var(--padding-small_1);
+}
+.hero-txt {
+    line-height: 1.2;
+    max-width: 1100px;
+    font-weight: 100;
+    letter-spacing: 0.1rem;
+    color: var(--white-bg-color);
+    font-size: clamp(3rem, 8vw, 8rem);
+    margin: var(--margin-medium) auto;
+    font-family: "Alex Brush", cursive;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+.hero-text {
+    letter-spacing: 0.6rem;
+    text-transform: uppercase;
+    padding-top: var(--padding-large_2);
+    color: var(--header-background-color);
+    font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+    font-family: 'David Libre', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+.exclamation {
+    font-family: "Allura", cursive;
+}
+.services-btn {
+    border: none;
+    color: #FFF;
+    cursor: pointer;
+    position: relative;
+    font-size: var(--font-md_1);
+    background-color: #C49B73;
+    font-family: 'HvD', sans-serif;
+    margin-top: var(--margin-large);
+    transition: border 0.3s, box-shadow 0.3s;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    padding: var(--padding-small) var(--padding-extra-large_1);
+}
+
+.services-btn::before {
+    top: 0;
+    left: 0;
+    width: 0%;
+    z-index: 0;
+    content: "";
+    height: 100%;
+    position: absolute;
+    transition: width 0.4s ease;
+    background-color: var(--brand-hover);
+}
+
+.services-btn span {
+    z-index: 1;
+    position: relative;
+}
+
+.services-btn:hover::before {
+  width: 100%;
+}
+
+.text-overlay {
+    width: 12%;
+    height: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFF;
+    margin-top: var(--margin-large);
+}
+.header {
+    margin-top: var(--margin-medium);
+    background-color: var(--header-background-color);
+}
+.header-content {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: var(--padding-large_1);
+    padding-top: var(--padding-extra-large_1);
+}
+.header-text {
+    letter-spacing: 0.1rem;
+    color: var(--main-text-color);
+    margin-top: var(--padding-medium);
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    margin-bottom: var(--padding-medium);
+    font-family: 'sarasvati', sans-serif;
+    -webkit-text-stroke: 0.2px var(--main-text-color);
+}
+.semicolon {
+    font-family: sans-serif;
+    margin-left: var(--margin-negative-small);
+}
+.bible-verse {
+    letter-spacing: 0.1rem;
+    color: var(--main-text-color);
+    padding-top: var(--padding-large_2);
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    font-family: 'sarasvati', sans-serif;
+    -webkit-text-stroke: 0.2px var(--main-text-color);
+}
+.verse {
+    font-family: 'footlight';   
+    font-weight: normal;
+}
+.top-overline {
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    margin-top: var(--margin-medium);
+    background-color: var(--border-color-light);
+}
+.bottom-overline {
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    margin-top: var(--margin-negative-medium);
+    background-color: var(--border-color-light);
+}
+.quote-section {
+    width: 100%;
+    display: flex;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    margin-top: var(--margin-medium);
+    margin-bottom: var(--margin-xlarge);
+    background: url('../assets/wedding-floral-concept-copy-space.jpg') center center/cover no-repeat;
+}
+
+.quote-section::before {
+    width: 100%;
+    content: "";
+    height: 600px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.20);
+}
+
+.quote-image {
+    top: 10rem;
+    z-index: 999;
+    max-width: 1000px;
+    position: absolute;
+}
+
+.section-text {
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 1px;
+    color: var(--white-bg-color);
+    font-family: 'sarasvati', sans-serif;
+    padding-left: var(--padding-large_1);
+    padding-right: var(--padding-large_1);
+    font-size: clamp(1.5rem, 5vw, 3.4rem);
+    -webkit-text-stroke: 0.2px var(--white-bg-color);
+}
+
+.bottom-underline {
+    width: 35%;
+    display: flex;
+    margin: 0 auto;
+    border-bottom: 2px dashed var(--white-bg-color);
+}

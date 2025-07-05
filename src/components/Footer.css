@@ -1,0 +1,15 @@
+.footer-section {
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-medium);
+    background-color: var(--brand-color);
+}
+.copyright {
+    letter-spacing: 0.1rem;
+    color: var(--white-bg-color);
+    font-family: 'HvD', sans-serif;
+    font-size: clamp(1rem, 1.4vw, 1.4rem);
+}

@@ -1,0 +1,110 @@
+.container {
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  display: flex;
+  position: sticky;
+  align-items: center;   
+  justify-content: center;
+  box-shadow: var(--shadow-light);
+  background-color: var(--background-color);
+}
+.navbar {
+  width: 1440px;
+  padding-top: var(--padding-small);
+  padding-left: var(--padding-small);
+  padding-right: var(--padding-small);
+  padding-bottom: var(--padding-small);
+}
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.logo {
+  height: auto;
+  max-width: 70px;
+}
+.brand-name {
+  font-weight: lighter;
+  letter-spacing: 0.1rem;
+  font-family: 'sarasvati';
+  font-size: var(--font-lgr);
+  color: var(--main-text-color);
+  padding-left: var(--padding-small);
+  -webkit-text-stroke: 0.3px var(--text-color);
+}
+.menu-container {
+  display: none;
+}
+.nav-links {
+  position: relative;
+  white-space: nowrap;
+  text-decoration: none;
+  color: var(--text-color);
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+  font-family: 'HvD', sans-serif;
+  font-size: var(--padding-small-medium);
+  -webkit-text-stroke: 0.2px var(--main-text-color);
+}
+.nav-links::after {
+  left: 0;
+  width: 0%;
+  content: '';
+  height: 2px;
+  bottom: -6px;
+  position: absolute;
+  transition: width 0.3s ease;
+  background-color: var(--border-color-strong);
+}
+.nav-links:hover::after {
+  width: 100%;
+}
+.nav-links:hover {
+  color: var(--brand-hover);
+}
+/* Show nav links in desktop view */
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: var(--padding-larger);
+}
+/* Hide nav links in mobile view unless active */
+.nav-menu.hidden {
+  display: none;
+}
+.nav-menu.active {
+  left: 0;
+  top: 80px;
+  width: 100%;
+  z-index: 1000;
+  padding: 10rem;
+  position: absolute;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--header-background-color); 
+}
+/* Hamburger icon hidden by default */
+.menu-container {
+  display: none;
+  cursor: pointer;
+  font-size: var(--font-lgst);
+}
+
+.menu-container i {
+  transition: transform 0.3s ease;
+}
+
+.menu-container i.rotate {
+  transform: rotate(180deg);
+}
+
+.fa-bars {
+  font-size: var(--font-lgr);
+}
