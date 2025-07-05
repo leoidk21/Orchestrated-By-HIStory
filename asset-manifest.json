@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Orchestrated-By-HIStory/static/css/main.d76dbca0.css",
+    "main.css": "/Orchestrated-By-HIStory/static/css/main.876f07ab.css",
     "main.js": "/Orchestrated-By-HIStory/static/js/main.43ebb1ae.js",
     "static/media/aboutusheader.png": "/Orchestrated-By-HIStory/static/media/aboutusheader.92ebd634ef3d07f30c49.png",
     "static/media/wedding-floral-concept-copy-space.jpg": "/Orchestrated-By-HIStory/static/media/wedding-floral-concept-copy-space.8cfba695f92ca9dcc148.jpg",
@@ -23,11 +23,11 @@
     "static/media/Fontspring-DEMO-theseasons-reg.otf": "/Orchestrated-By-HIStory/static/media/Fontspring-DEMO-theseasons-reg.2c9625941d4c89994b85.otf",
     "static/media/360851387_11432686 1.png": "/Orchestrated-By-HIStory/static/media/360851387_11432686 1.947382881624d9093405.png",
     "index.html": "/Orchestrated-By-HIStory/index.html",
-    "main.d76dbca0.css.map": "/Orchestrated-By-HIStory/static/css/main.d76dbca0.css.map",
+    "main.876f07ab.css.map": "/Orchestrated-By-HIStory/static/css/main.876f07ab.css.map",
     "main.43ebb1ae.js.map": "/Orchestrated-By-HIStory/static/js/main.43ebb1ae.js.map"
   },
   "entrypoints": [
-    "static/css/main.d76dbca0.css",
+    "static/css/main.876f07ab.css",
     "static/js/main.43ebb1ae.js"
   ]
 }
