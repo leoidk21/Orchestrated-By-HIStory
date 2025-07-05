@@ -358,11 +358,6 @@
         margin: 0 auto !important;
     }
 
-    .modal-content {
-        height: 34% !important;
-        width: 110% !important;
-    }
-
     .modal-btn {
         width: 135% !important;
         font-size: 1.2rem !important;
