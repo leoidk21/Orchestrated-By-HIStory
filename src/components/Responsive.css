@@ -358,6 +358,12 @@
         margin: 0 auto !important;
     }
 
+    .modal-content {
+        max-height: 34%;
+        height: 100% !important;
+        width: 110% !important;
+    }
+
     .modal-btn {
         width: 135% !important;
         font-size: 1.2rem !important;
@@ -409,7 +415,8 @@
     }
 
     .modal-content {
-        height: 32% !important;
+        max-height: 32%;
+        height: 100% !important;
         width: 110% !important;
     }
 
